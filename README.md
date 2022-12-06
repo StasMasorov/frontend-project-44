@@ -4,3 +4,4 @@
 brain-even(https://asciinema.org/a/J7JvpnToyv9XqQtszOSNCaBnE)
 brain-calc(https://asciinema.org/a/oRY60AfkjHd3CnT8BAKY0I5Kp)
 brain-gcd(https://asciinema.org/a/5T4QZeJb9gxqQzDNXSKnyKyvj)
+brain-progression(https://asciinema.org/a/VcgAkoyBMAED5nHvnq2phVcbE)
