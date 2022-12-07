@@ -1,6 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const getRandom = (max) => { return Math.round(Math.random() * (max - 1)) + 1 };
+const getRandom = (max) => {
+  const randomnum = Math.round(Math.random() * (max - 1)) + 1;
+  return randomnum;
+};
 
 const doArray = () => {
   const result = [];

@@ -5,14 +5,15 @@ function getRandom() {
 }
 
 const gcd = (number1, number2) => {
-  x = Math.abs(number1);
-  y = Math.abs(ynumber2);
-  while (number2) {
-    let t = number2;
-    number2 = number1 % number2;
-    numer1 = t;
+  let x = Math.abs(number1);
+  let y = Math.abs(number2);
+  while (y) {
+    const t = y;
+    y = x % y;
+    x = t;
   }
-  return number1;
+  const result = x;
+  return result;
 };
 
 const gcdngame = (userName) => {
@@ -29,9 +30,9 @@ const gcdngame = (userName) => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${String(gcd(num1, num2))}'.`);
       return console.log(`Let's try again, ${userName}!`);
     }
-  i += 1;
+    i += 1;
   }
-return console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 export default gcdngame;
