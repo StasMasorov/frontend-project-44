@@ -7,7 +7,7 @@ function getRandom() {
 function randomSymbol() {
   let symbol = '';
   const characters = '+-*';
-  let charactersLength = characters.length;
+  const charactersLength = characters.length;
   symbol = characters.charAt(Math.floor(Math.random() * charactersLength));
   return symbol;
 }
@@ -24,28 +24,23 @@ const calcgame = (userName) => {
       const answerNum = readlineSync.question('Your answer: ');
       if (answerNum === String(num1 + num2)) {
         console.log('Correct!');
-      }
-      else if (answerNum !== String(num1 + num2)) {
+      } else if (answerNum !== String(num1 + num2)) {
         console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${num1 + num2}'.`);
         return console.log(`Let's try again, ${userName}!`);
       }
-    }
-    else if (symb === '-') {
+    } else if (symb === '-') {
       const answerNum = readlineSync.question('Your answer: ');
       if (answerNum === String(num1 - num2)) {
         console.log('Correct!');
-      }
-      else if (answerNum !== String(num1 - num2)) {
+      } else if (answerNum !== String(num1 - num2)) {
         console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${num1 - num2}'.`);
-          return console.log(`Let's try again, ${userName}!`);
+        return console.log(`Let's try again, ${userName}!`);
       }
-    }
-    else if (symb === '*') {
+    } else if (symb === '*') {
       const answerNum = readlineSync.question('Your answer: ');
       if (answerNum === String(num1 * num2)) {
         console.log('Correct!');
-      }
-      else if (answerNum !== String(num1 * num2)) {
+      } else if (answerNum !== String(num1 * num2)) {
         console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${num1 * num2}'.`);
         return console.log(`Let's try again, ${userName}!`);
       }

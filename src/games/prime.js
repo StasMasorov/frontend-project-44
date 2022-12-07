@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const getRandom = (max) => {
-  return Math.round(Math.random() * (max - 2)) + 1;
-};
+const getRandom = (max) => { return Math.round(Math.random() * (max - 2)) + 1 };
 
 const primegame = (userName) => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -21,10 +19,9 @@ const primegame = (userName) => {
     const answerNum = readlineSync.question('Your answer: ');
     if (answerNum === rightAnswer) {
       console.log('Correct!');
-    }
-    else {
+    } else {
       console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-      return  console.log(`Let's try again, ${userName}!`);
+      return console.log(`Let's try again, ${userName}!`);
     }
     i += 1;
   }

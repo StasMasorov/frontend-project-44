@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const getRandom = (max) => {
-  return Math.round(Math.random() * (max - 1)) + 1;
-};
+const getRandom = (max) => { return Math.round(Math.random() * (max - 1)) + 1 };
 
 const doArray = () => {
   const result = [];
@@ -29,8 +27,7 @@ const proggame = (userName) => {
     const answerNum = readlineSync.question('Your answer: ');
     if (answerNum === String(hiddenNum)) {
       console.log('Correct!');
-    }
-    else {
+    } else {
       console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${hiddenNum}'.`);
       return console.log(`Let's try again, ${userName}!`);
     }

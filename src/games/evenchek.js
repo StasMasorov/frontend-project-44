@@ -14,26 +14,21 @@ const evengame = (userName) => {
       const answerNum = readlineSync.question('Your answer: ');
       if (answerNum === 'yes') {
         console.log('Correct!');
-      }
-      else if (answerNum === 'no') {
+      } else if (answerNum === 'no') {
         console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
         return console.log(`Let's try again, ${userName}!`);
-      }
-      else {
+      } else {
         console.log(`'${answerNum}' is wrong answer ;(. Correct answer was 'yes'.`);
         return console.log(`Let's try again, ${userName}!`);
       }
-    }
-    else if (num % 2 !== 0) {
+    } else if (num % 2 !== 0) {
       const answerNum = readlineSync.question('Your answer: ');
       if (answerNum === 'no') {
         console.log('Correct!');
-      }
-      else if (answerNum === 'yes') {
+      } else if (answerNum === 'yes') {
         console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
         return console.log(`Let's try again, ${userName}!`);
-      }
-      else {
+      } else {
         console.log(`'${answerNum}' is wrong answer ;(. Correct answer was 'no'.`);
         return console.log(`Let's try again, ${userName}!`);
       }
