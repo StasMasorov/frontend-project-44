@@ -4,7 +4,7 @@ const getRandom = (max) => {
     return Math.round(Math.random() * (max - 2)) + 1;
   };
 
-  const primegame = () => {
+  const primegame = (userName) => {
     console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     let i = 1;
     while (i <= 3) {
@@ -24,11 +24,11 @@ const getRandom = (max) => {
             }
             else {
                 console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-                return "Let's try again, name!";
+                return  console.log(`Let's try again, ${userName}!`);
             }
             i += 1;
         }
-        return 'Congratulations, name!'
+        return console.log(`Congratulations, ${userName}!`);
     };  
 
 export default primegame;

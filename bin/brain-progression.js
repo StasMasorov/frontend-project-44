@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import proggame from '../src/progression.js';
+import proggame from '../src/games/progression.js';
+import { welcome } from '../src/cli.js';
 
-console.log(proggame());
+const name = welcome();
+proggame(name);

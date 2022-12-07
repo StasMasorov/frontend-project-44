@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import calcgame from '../src/calc.js';
+import calcgame from '../src/games/calc.js';
+import { welcome } from '../src/cli.js';
 
-console.log(calcgame());
+const name = welcome();
+calcgame(name);

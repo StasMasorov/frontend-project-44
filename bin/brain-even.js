@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import evengame from '../src/evenchek.js';
+import evengame from '../src/games/evenchek.js';
+import { welcome } from '../src/cli.js';
 
-console.log(evengame());
+const name = welcome();
+evengame(name);

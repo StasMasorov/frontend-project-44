@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import primegame from '../src/prime.js';
+import primegame from '../src/games/prime.js';
+import { welcome } from '../src/cli.js';
 
-console.log(primegame());
+const name = welcome();
+primegame(name);

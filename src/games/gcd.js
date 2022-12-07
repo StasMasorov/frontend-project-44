@@ -15,7 +15,7 @@ const gcd = (x, y) => {
     return x;
   };
 
-const gcdngame = () => {
+const gcdngame = (userName) => {
     console.log('Find the greatest common divisor of given numbers.');
     let i = 1;
     while (i <= 3) {
@@ -28,11 +28,11 @@ const gcdngame = () => {
         }
         else {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${String(gcd(num1, num2))}'.`);
-            return "Let's try again, name!";
+            return  console.log(`Let's try again, ${userName}!`);
         }
         i += 1;
     }
-    return 'Congratulations, name!';
+    return console.log(`Congratulations, ${userName}!`);
 };
 
 export default gcdngame;

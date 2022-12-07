@@ -16,7 +16,7 @@ const doArray = () => {
     return result;
 };
 
-  const proggame = () => {
+  const proggame = (userName) => {
     console.log('What number is missing in the progression?');
     let i = 1;
     while (i <= 3) {
@@ -32,11 +32,11 @@ const doArray = () => {
             }
             else {
                 console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${hiddenNum}'.`);
-                return "Let's try again, name!";
+                return  console.log(`Let's try again, ${userName}!`);
             }
             i += 1;
         }
-        return 'Congratulations, name!'
+        return console.log(`Congratulations, ${userName}!`);
     };  
 
 export default proggame;

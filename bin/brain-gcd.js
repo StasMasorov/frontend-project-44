@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import gcdgame from '../src/gcd.js';
+import gcdgame from '../src/games/gcd.js';
+import { welcome } from '../src/cli.js';
 
-console.log(gcdgame());
+const name = welcome();
+gcdgame(name);

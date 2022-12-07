@@ -4,7 +4,7 @@ function getRandom() {
     return Math.round(Math.random() * (99 - 1)) + 1;
 };
 
-const evengame = () => {
+const evengame = (userName) => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     let i = 1;
     while (i <= 3) {
@@ -17,11 +17,11 @@ const evengame = () => {
             }
             else if (answerNum === 'no') {
                 console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
-                return "Let's try again, name!";
+                return  console.log(`Let's try again, ${userName}!`);
             }
             else {
                 console.log(`'${answerNum}' is wrong answer ;(. Correct answer was 'yes'.`);
-                return "Let's try again, name!";
+                return  console.log(`Let's try again, ${userName}!`);
             }
         }
         else if (num % 2 !== 0) {
@@ -31,16 +31,16 @@ const evengame = () => {
             }
             else if (answerNum === 'yes') {
                 console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
-                return "Let's try again, name!";
+                return  console.log(`Let's try again, ${userName}!`);
             }
             else {
                 console.log(`'${answerNum}' is wrong answer ;(. Correct answer was 'no'.`);
-                return "Let's try again, name!";
+                return  console.log(`Let's try again, ${userName}!`);
             }
         }
         i += 1;
     }
-    return 'Congratulations, name!';
+    return console.log(`Congratulations, ${userName}!`);
 };
 
 export default evengame;
