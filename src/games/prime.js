@@ -1,15 +1,11 @@
 import readlineSync from 'readline-sync';
-
-const getRandom = (max) => {
-  const randomnum = Math.round(Math.random() * (max - 2)) + 1;
-  return randomnum;
-};
+import getRandom from '../utils.js';
 
 const primegame = (userName) => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let i = 1;
   while (i <= 3) {
-    const num = getRandom(1000);
+    const num = getRandom(1000, 2);
     console.log(`Question: ${num}`);
     let j = 2;
     let rightAnswer = 'yes';

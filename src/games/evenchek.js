@@ -1,14 +1,11 @@
 import readlineSync from 'readline-sync';
-
-function getRandom() {
-  return Math.round(Math.random() * (99 - 1)) + 1;
-}
+import getRandom from '../utils.js';
 
 const evengame = (userName) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let i = 1;
   while (i <= 3) {
-    const num = getRandom();
+    const num = getRandom(99, 1);
     console.log(`Question: ${num}`);
     if (num % 2 === 0) {
       const answerNum = readlineSync.question('Your answer: ');

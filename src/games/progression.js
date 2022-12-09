@@ -1,15 +1,11 @@
 import readlineSync from 'readline-sync';
-
-const getRandom = (max) => {
-  const randomnum = Math.round(Math.random() * (max - 1)) + 1;
-  return randomnum;
-};
+import getRandom from '../utils.js';
 
 const doArray = () => {
   const result = [];
   let i = 1;
-  result[0] = getRandom(50);
-  const step = getRandom(15);
+  result[0] = getRandom(50, 1);
+  const step = getRandom(15, 1);
   while (i <= 9) {
     result[i] = result[i - 1] + step;
     i += 1;
@@ -22,7 +18,7 @@ const proggame = (userName) => {
   let i = 1;
   while (i <= 3) {
     const array = doArray();
-    const num = getRandom(9);
+    const num = getRandom(9, 1);
     const hiddenNum = array[num];
     array[num] = '..';
     const newArray = array.join(' ');
