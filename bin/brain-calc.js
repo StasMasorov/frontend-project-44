@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import calcgame from '../src/games/calc.js';
-import welcome from '../src/cli.js';
+import engine from '../src/index.js';
 
-const name = welcome();
-calcgame(name);
+const rules = 'What is the result of the expression?';
+engine(rules, calcgame);

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import evengame from '../src/games/evenchek.js';
-import welcome from '../src/cli.js';
+import engine from '../src/index.js';
 
-const name = welcome();
-evengame(name);
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+engine(rules, evengame);

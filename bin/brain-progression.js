@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import proggame from '../src/games/progression.js';
-import welcome from '../src/cli.js';
+import engine from '../src/index.js';
 
-const name = welcome();
-proggame(name);
+const rules = 'What number is missing in the progression?';
+engine(rules, proggame);

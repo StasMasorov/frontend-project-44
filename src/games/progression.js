@@ -13,26 +13,17 @@ const doArray = () => {
   return result;
 };
 
-const proggame = (userName) => {
-  console.log('What number is missing in the progression?');
-  let i = 1;
-  while (i <= 3) {
-    const array = doArray();
-    const num = getRandom(9, 1);
-    const hiddenNum = array[num];
-    array[num] = '..';
-    const newArray = array.join(' ');
-    console.log(`Question: ${newArray}`);
-    const answerNum = readlineSync.question('Your answer: ');
-    if (answerNum === String(hiddenNum)) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answerNum}' is wrong answer ;(. Correct answer was '${hiddenNum}'.`);
-      return console.log(`Let's try again, ${userName}!`);
-    }
-    i += 1;
-  }
-  return console.log(`Congratulations, ${userName}!`);
+const proggame = () => {
+  const array = doArray();
+  const num = getRandom(9, 1);
+  const hiddenNum = array[num];
+  array[num] = '..';
+  const newArray = array.join(' ');
+  console.log(`Question: ${newArray}`);
+  const answer = readlineSync.question('Your answer: ');
+  const question = String(hiddenNum);
+  const result = [question, answer];
+  return result;
 };
 
 export default proggame;

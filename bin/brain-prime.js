@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import primegame from '../src/games/prime.js';
-import welcome from '../src/cli.js';
+import engine from '../src/index.js';
 
-const name = welcome();
-primegame(name);
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+engine(rules, primegame);
