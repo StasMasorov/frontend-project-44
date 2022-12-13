@@ -1,18 +1,12 @@
 import readlineSync from 'readline-sync';
 
 const generateRound = (round) => {
-  let i = 1;
-  while (i <= 3) {
-    const result = round();
-    if (result[0] === result[1]) {
-      console.log('Correct!');
-      i += 1;
-    } else {
-      console.log(`'${result[1]}' is wrong answer ;(. Correct answer was '${result[0]}'.`);
-      return false;
-    }
+  const result = round();
+  if (result[0] !== result[1]) {
+    console.log(`'${result[1]}' is wrong answer ;(. Correct answer was '${result[0]}'.`);
+    return false;
   }
-  return true;
+  return console.log('Correct!');
 };
 
 export default function engine(rules, game) {
@@ -20,10 +14,12 @@ export default function engine(rules, game) {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rules);
-  const result = generateRound(game);
-  if (result === true) {
-    console.log(`Congratulations, ${userName}!`);
-  } else if (result === false) {
-    console.log(`Let's try again, ${userName}!`);
+  const roundsCount = 3;
+  for (let i = 0; i < roundsCount; i += 1) {
+    const result = generateRound(game);
+    if (result === false) {
+      return console.log(`Let's try again, ${userName}!`);
+    }
   }
+  return console.log(`Congratulations, ${userName}!`);
 }
