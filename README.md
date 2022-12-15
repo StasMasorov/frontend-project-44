@@ -13,20 +13,20 @@
 * Availability of a computer with a keyboard; 
 * The presence of a command line terminal.
 
-</blue>**Installation Instruction:**</blue>
+**Installation Instruction:**
 1. In the command line terminal, find in the directory where you want to install the game;
 2. Enter the command: "git clone git@github.com:StasMasorov/frontend-project-44.git";
 3. Enter the command: "make install";
 4. For game start enter one of the five commands: 
   1) <span style="color:ff0090">"brain-even" Demonstration video:</span>
   [![asciicast](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC.svg)](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC)
-  2) <red>"brain-calc" Demonstration video:</red>
+  2) <span style="color:blue">"brain-calc" Demonstration video:</span>
   [![asciicast](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm.svg)](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm)
-  3) <red>"brain-gcd" Demonstration video:</red>
+  3) <span style="color:red">"brain-gcd" Demonstration video:</span>
   [![asciicast](https://asciinema.org/a/eLPBGBan39SBGHhoNDJ1w15Hu.svg)](https://asciinema.org/a/eLPBGBan39SBGHhoNDJ1w15Hu)
-  4) <red>"brain-progression" Demonstration video:</red>
+  4) <span style="color:green">"brain-progression" Demonstration video:</span>
   [![asciicast](https://asciinema.org/a/r5CJyY7prPzg1Gxn24emomRD9.svg)](https://asciinema.org/a/r5CJyY7prPzg1Gxn24emomRD9)
-  5) <red>"brain-prime" Demonstration video:</red>
+  5) <span style="color:red">"brain-prime" Demonstration video:</span>
   [![asciicast](https://asciinema.org/a/QgwNpvZFLJuD7RkKq5OAS1gO6.svg)](https://asciinema.org/a/QgwNpvZFLJuD7RkKq5OAS1gO6)
 
 [![Actions Status](https://github.com/StasMasorov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/StasMasorov/frontend-project-44/actions)
