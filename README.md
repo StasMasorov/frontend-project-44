@@ -1,8 +1,3 @@
-<style>
-red { color: red }
-yellow { color: yellow }
-blue { color: blue }
-</style>
 ### Hexlet tests and linter status:
 ### **Description:**
 #### **Brain-games** 
@@ -23,7 +18,7 @@ blue { color: blue }
 2. Enter the command: "git clone git@github.com:StasMasorov/frontend-project-44.git";
 3. Enter the command: "make install";
 4. For game start enter one of the five commands: 
-  1) <red>"brain-even" Demonstration video:</red>
+  1) <span style="color:ff0090">"brain-even" Demonstration video:</span>
   [![asciicast](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC.svg)](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC)
   2) <red>"brain-calc" Demonstration video:</red>
   [![asciicast](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm.svg)](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm)
