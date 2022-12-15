@@ -13,7 +13,7 @@ const doArray = () => {
   return result;
 };
 
-const proggame = () => {
+const generateRound = () => {
   const array = doArray();
   const num = getRandom(9, 1);
   const hiddenNum = array[num];
@@ -26,4 +26,4 @@ const proggame = () => {
   return result;
 };
 
-export default proggame;
+export default generateRound;

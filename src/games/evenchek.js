@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import getRandom from '../utils.js';
 
-const evengame = () => {
+const generateRound = () => {
   const num = getRandom(99, 1);
   console.log(`Question: ${num}`);
   const answer = readlineSync.question('Your answer: ');
@@ -15,4 +15,4 @@ const evengame = () => {
   return result;
 };
 
-export default evengame;
+export default generateRound;

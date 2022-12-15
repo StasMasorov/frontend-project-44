@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import getRandom from '../utils.js';
 
-const primegame = () => {
+const generateRound = () => {
   const num = getRandom(1000, 2);
   console.log(`Question: ${num}`);
   const answer = readlineSync.question('Your answer: ');
@@ -19,4 +19,4 @@ const primegame = () => {
   return result;
 };
 
-export default primegame;
+export default generateRound;

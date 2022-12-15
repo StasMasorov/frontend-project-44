@@ -13,7 +13,7 @@ const gcd = (number1, number2) => {
   return result;
 };
 
-const gcdngame = () => {
+const generateRound = () => {
   const num1 = getRandom(100, 1);
   const num2 = getRandom(100, 1);
   console.log(`Question: ${num1} ${num2}`);
@@ -23,4 +23,4 @@ const gcdngame = () => {
   return result;
 };
 
-export default gcdngame;
+export default generateRound;

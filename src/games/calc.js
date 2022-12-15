@@ -9,7 +9,7 @@ function randomSymbol() {
   return symbol;
 }
 
-const calcgame = () => {
+const generateRound = () => {
   const num1 = getRandom(50, 1);
   const num2 = getRandom(50, 1);
   const symb = randomSymbol();
@@ -27,4 +27,4 @@ const calcgame = () => {
   return result;
 };
 
-export default calcgame;
+export default generateRound;
