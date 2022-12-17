@@ -18,18 +18,16 @@ is a set of five math games. In these games it is necessary to give the correct 
 2. Enter the command: "git clone git@github.com:StasMasorov/frontend-project-44.git";
 3. Enter the command: "make install";
 4. For game start enter one of the five commands: 
-  1) <span style="color:ff0090">"brain-even" Demonstration video:</span>
+  1) $${\color{red}"brain-even" Demonstration video:}$$
   [![asciicast](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC.svg)](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC)
-  2) <span style="color:blue">"brain-calc" Demonstration video:</span>
+  2) $${\color{blue}"brain-calc" Demonstration video:}$$
   [![asciicast](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm.svg)](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm)
-  3) <span style="color:red">"brain-gcd" Demonstration video:</span>
+  3) $${\color{green}"brain-gcd" Demonstration video:}$$
   [![asciicast](https://asciinema.org/a/eLPBGBan39SBGHhoNDJ1w15Hu.svg)](https://asciinema.org/a/eLPBGBan39SBGHhoNDJ1w15Hu)
-  4) <span style="color:green">"brain-progression" Demonstration video:</span>
+  4) $${\color{orange}"brain-progression" Demonstration video:}$$
   [![asciicast](https://asciinema.org/a/r5CJyY7prPzg1Gxn24emomRD9.svg)](https://asciinema.org/a/r5CJyY7prPzg1Gxn24emomRD9)
-  5) <span style="color:red">"brain-prime" Demonstration video:</span>
+  5) $${\color{7442c8}"brain-prime" Demonstration video:}$$
   [![asciicast](https://asciinema.org/a/QgwNpvZFLJuD7RkKq5OAS1gO6.svg)](https://asciinema.org/a/QgwNpvZFLJuD7RkKq5OAS1gO6)
 
 [![Actions Status](https://github.com/StasMasorov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/StasMasorov/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9ccf0cca5220e67de82c/maintainability)](https://codeclimate.com/github/StasMasorov/frontend-project-44/maintainability)
-
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
