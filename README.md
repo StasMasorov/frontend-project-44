@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 ### **Description:**
 #### **Brain-games** 
-- is a set of five math games. In these games it is necessary to give the correct answers to the questions posed. If you answer correctly, you will be congratulated on your victory. If you answer incorrectly, you will receive our regret and you can try again. 
+is a set of five math games. In these games it is necessary to give the correct answers to the questions posed. If you answer correctly, you will be congratulated on your victory. If you answer incorrectly, you will receive our regret and you can try again. 
 #### **This set include five games:**
   1. "brain-even"
   2. "brain-calc"
@@ -31,3 +31,5 @@
 
 [![Actions Status](https://github.com/StasMasorov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/StasMasorov/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9ccf0cca5220e67de82c/maintainability)](https://codeclimate.com/github/StasMasorov/frontend-project-44/maintainability)
+
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
