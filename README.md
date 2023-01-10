@@ -18,7 +18,7 @@ is a set of five math games. In these games it is necessary to give the correct 
 2. Enter the command: "git clone git@github.com:StasMasorov/frontend-project-44.git";
 3. Enter the command: "make install";
 4. For game start enter one of the five commands: 
-  1) "brain-even" Demonstration video:
+  1) ```brain-even``` 
   [![asciicast](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC.svg)](https://asciinema.org/a/2UaHtLnSnImkbIUtH0UmboXBC)
   2) "brain-calc" Demonstration video:
   [![asciicast](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm.svg)](https://asciinema.org/a/mBqgvT2Md3bpNyEfXTV3b9zMm)
