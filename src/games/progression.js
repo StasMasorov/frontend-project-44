@@ -1,4 +1,4 @@
-import getRandom from '../utils.js';
+import { getRandom } from '../utils.js';
 import engine from '../index.js';
 
 const rules = 'What number is missing in the progression?';

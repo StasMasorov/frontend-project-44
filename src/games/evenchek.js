@@ -1,4 +1,4 @@
-import getRandom from '../utils.js';
+import { getRandom } from '../utils.js';
 import engine from '../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
