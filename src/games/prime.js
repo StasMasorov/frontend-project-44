@@ -1,22 +1,25 @@
-import readlineSync from 'readline-sync';
 import getRandom from '../utils.js';
+import engine from '../index.js';
+
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const generateRound = () => {
-  const num = getRandom(1000, 2);
+  const num = getRandom(2, 1000);
   console.log(`Question: ${num}`);
-  const answer = readlineSync.question('Your answer: ');
   let j = 2;
   let question = 'yes';
   while (j < num) {
     if (num % j === 0) {
       question = 'no';
-      const result = [question, answer];
+      const result = question;
       return result;
     }
     j += 1;
   }
-  const result = [question, answer];
+  const result = question;
   return result;
 };
 
-export default generateRound;
+export default () => {
+  engine(rules, generateRound);
+};

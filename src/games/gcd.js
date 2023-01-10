@@ -1,6 +1,7 @@
-import readlineSync from 'readline-sync';
 import getRandom from '../utils.js';
+import engine from '../index.js';
 
+const rules = 'Find the greatest common divisor of given numbers.';
 const gcd = (number1, number2) => {
   let x = Math.abs(number1);
   let y = Math.abs(number2);
@@ -14,13 +15,14 @@ const gcd = (number1, number2) => {
 };
 
 const generateRound = () => {
-  const num1 = getRandom(100, 1);
-  const num2 = getRandom(100, 1);
+  const num1 = getRandom(1, 100);
+  const num2 = getRandom(1, 100);
   console.log(`Question: ${num1} ${num2}`);
-  const answer = readlineSync.question('Your answer: ');
   const question = String(gcd(num1, num2));
-  const result = [question, answer];
+  const result = question;
   return result;
 };
 
-export default generateRound;
+export default () => {
+  engine(rules, generateRound);
+};

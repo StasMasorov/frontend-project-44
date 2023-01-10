@@ -1,21 +1,19 @@
-import readlineSync from 'readline-sync';
 import getRandom from '../utils.js';
+import engine from '../index.js';
 
-function randomSymbol() {
-  let symbol = '';
-  const characters = '+-*';
-  const charactersLength = characters.length;
-  symbol = characters.charAt(Math.floor(Math.random() * charactersLength));
-  return symbol;
-}
+const rules = 'What is the result of the expression?';
+
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*'];
+  return operators[getRandom(0, operators.length - 1)];
+};
 
 const generateRound = () => {
-  const num1 = getRandom(50, 1);
-  const num2 = getRandom(50, 1);
-  const symb = randomSymbol();
+  const num1 = getRandom(1, 50);
+  const num2 = getRandom(1, 50);
+  const symb = getRandomOperator();
   let question = '';
   console.log(`Question: ${num1} ${symb} ${num2}`);
-  const answer = readlineSync.question('Your answer: ');
   if (symb === '+') {
     question += String(num1 + num2);
   } else if (symb === '-') {
@@ -23,8 +21,10 @@ const generateRound = () => {
   } else if (symb === '*') {
     question += String(num1 * num2);
   }
-  const result = [question, answer];
+  const result = question;
   return result;
 };
 
-export default generateRound;
+export default () => {
+  engine(rules, generateRound);
+};
