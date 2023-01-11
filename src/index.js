@@ -8,7 +8,9 @@ export default function engine(rules, generateRound) {
   console.log(`Hello, ${userName}!`);
   console.log(rules);
   for (let i = 0; i < roundsCount; i += 1) {
-    const rightAnswer = generateRound();
+    const generateRoundResult = generateRound();
+    const rightAnswer = generateRoundResult[1];
+    console.log(generateRoundResult[0]);
     const userAnswer = readlineSync.question('Your answer: ');
     if (rightAnswer === userAnswer) {
       console.log('Correct!');
