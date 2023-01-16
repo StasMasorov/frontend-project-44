@@ -2,6 +2,7 @@ import getRandom from '../utils.js';
 import engine from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
+
 const gcd = (number1, number2) => {
   let x = Math.abs(number1);
   let y = Math.abs(number2);

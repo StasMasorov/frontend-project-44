@@ -23,9 +23,9 @@ const calculate = (numb1, numb2, operator) => {
 const generateRound = () => {
   const num1 = getRandom(1, 50);
   const num2 = getRandom(1, 50);
-  const symb = RandomOperator();
-  const question = `Question: ${num1} ${symb} ${num2}`;
-  const answer = calculate(num1, num2, symb);
+  const operator = RandomOperator();
+  const question = `Question: ${num1} ${operator} ${num2}`;
+  const answer = calculate(num1, num2, operator);
   return [question, answer];
 };
 

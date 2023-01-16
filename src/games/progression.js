@@ -17,13 +17,12 @@ const makeProgression = (firstNumb, stepNumb, length) => {
 
 const generateRound = () => {
   const firstNum = getRandom(1, 50);
-  const step = getRandom(1, 15);
-  const array = makeProgression(firstNum, step, 10);
-  const num = getRandom(1, 9);
-  const hiddenNum = array[num];
-  array[num] = '..';
-  const newArray = array.join(' ');
-  const question = `Question: ${newArray}`;
+  const step = getRandom(2, 15);
+  const progression = makeProgression(firstNum, step, 10);
+  const hiddenIndex = getRandom(1, 9);
+  const hiddenNum = progression[hiddenIndex];
+  progression[hiddenIndex] = '..';
+  const question = `Question: ${progression.join(' ')}`;
   const answer = String(hiddenNum);
   return [question, answer];
 };
